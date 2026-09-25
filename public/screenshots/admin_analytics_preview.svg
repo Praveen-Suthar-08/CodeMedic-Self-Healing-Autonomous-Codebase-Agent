@@ -21,7 +21,7 @@
   <text x="55" y="60" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">📊 Engineering Leadership &amp; SOC-2 Cryptographic Operations</text>
   
   <rect x="950" y="38" width="200" height="34" rx="8" fill="#7C3AED" opacity="0.2" stroke="#A78BFA"/>
-  <text x="965" y="60" fill="#C084FC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">⚡ AI Token Ledger &rarr;</text>
+  <text x="965" y="60" fill="#C084FC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold">⚡ AI Token Ledger &#8594;</text>
 
   <!-- 4-Bento KPI Grid -->
   <rect x="30" y="100" width="270" height="95" rx="14" fill="url(#cardGrad3)" stroke="#30363D"/>
