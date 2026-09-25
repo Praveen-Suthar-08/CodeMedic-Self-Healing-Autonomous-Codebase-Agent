@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D13"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="cardGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#12161C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg5)"/>
+
+  <!-- Header -->
+  <rect x="30" y="25" width="1140" height="60" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <text x="55" y="60" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">⚙️ Repository Policies, Autonomous Gatekeeper &amp; Risk Heatmap</text>
+
+  <!-- Left Column: Repo Selector & Policy Sliders -->
+  <rect x="30" y="100" width="550" height="545" rx="16" fill="url(#cardGrad5)" stroke="#30363D"/>
+  <text x="50" y="130" fill="#F0F6FC" font-family="sans-serif" font-size="13" font-weight="bold">📦 Repository: repo-payments (Active)</text>
+  <text x="50" y="150" fill="#8B949E" font-family="sans-serif" font-size="11">Automated gatekeeper thresholds and Docker sandbox configuration</text>
+
+  <!-- Threshold Slider Card -->
+  <rect x="45" y="170" width="520" height="110" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <text x="65" y="195" fill="#8B949E" font-family="sans-serif" font-size="11">Auto-Merge Confidence Threshold</text>
+  <text x="490" y="195" fill="#34D399" font-family="monospace" font-size="14" font-weight="bold">88%</text>
+  
+  <rect x="65" y="215" width="470" height="8" rx="4" fill="#21262D"/>
+  <rect x="65" y="215" width="413" height="8" rx="4" fill="#10B981"/>
+  <circle cx="478" cy="219" r="10" fill="#34D399"/>
+  <text x="65" y="250" fill="#8B949E" font-family="sans-serif" font-size="10">Fixes scoring &gt;= 88% with zero test failures will open &amp; auto-merge PRs automatically.</text>
+
+  <!-- Docker Test Command Card -->
+  <rect x="45" y="295" width="520" height="85" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <text x="65" y="320" fill="#8B949E" font-family="sans-serif" font-size="11">Isolated Docker Test Command</text>
+  <rect x="65" y="335" width="480" height="32" rx="6" fill="#161B22" stroke="#30363D"/>
+  <text x="75" y="355" fill="#C084FC" font-family="monospace" font-size="11">npm test -- --coverage --runInBand</text>
+
+  <!-- Webhook Token Listener Card -->
+  <rect x="45" y="395" width="520" height="230" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <text x="65" y="420" fill="#F0F6FC" font-family="sans-serif" font-size="12" font-weight="bold">📡 Ingest Listener Webhook Tokens</text>
+  
+  <!-- Token 1 -->
+  <rect x="65" y="435" width="480" height="80" rx="8" fill="#161B22" stroke="#30363D"/>
+  <text x="80" y="458" fill="#F0F6FC" font-family="sans-serif" font-size="11" font-weight="bold">SENTRY Production Crash Sink</text>
+  <rect x="460" y="445" width="70" height="18" rx="4" fill="#059669" opacity="0.2"/>
+  <text x="470" y="458" fill="#34D399" font-family="monospace" font-size="9" font-weight="bold">ACTIVE</text>
+  <text x="80" y="480" fill="#8B949E" font-family="monospace" font-size="10">Token: cm_sec_8f9a2b1... [copy] · 42 events ingested</text>
+  <text x="80" y="500" fill="#60A5FA" font-family="monospace" font-size="9">Endpoint: /api/webhooks/listener/cm_sec_8f9a2b1</text>
+
+  <!-- Token 2 -->
+  <rect x="65" y="525" width="480" height="80" rx="8" fill="#161B22" stroke="#30363D"/>
+  <text x="80" y="548" fill="#F0F6FC" font-family="sans-serif" font-size="11" font-weight="bold">DATADOG APM Error Ingest</text>
+  <rect x="460" y="535" width="70" height="18" rx="4" fill="#059669" opacity="0.2"/>
+  <text x="470" y="548" fill="#34D399" font-family="monospace" font-size="9" font-weight="bold">ACTIVE</text>
+  <text x="80" y="570" fill="#8B949E" font-family="monospace" font-size="10">Token: cm_sec_4c7e19d... [copy] · 19 events ingested</text>
+  <text x="80" y="590" fill="#60A5FA" font-family="monospace" font-size="9">Endpoint: /api/webhooks/listener/cm_sec_4c7e19d</text>
+
+  <!-- Right Column: Codebase File Risk & Rejection Penalty Heatmap -->
+  <rect x="610" y="100" width="560" height="545" rx="16" fill="url(#cardGrad5)" stroke="#30363D"/>
+  <text x="630" y="130" fill="#F0F6FC" font-family="sans-serif" font-size="13" font-weight="bold">🔥 Codebase File-Level Risk Penalty Heatmap</text>
+  <text x="630" y="150" fill="#8B949E" font-family="sans-serif" font-size="11">Dynamically adjusted via developer rejection calibration loop</text>
+
+  <!-- Heatmap Table -->
+  <rect x="625" y="170" width="530" height="455" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <rect x="625" y="170" width="530" height="30" rx="12" fill="#161B22"/>
+  <text x="645" y="190" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">FILE PATH</text>
+  <text x="920" y="190" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">RISK FACTOR</text>
+  <text x="1050" y="190" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">STATUS</text>
+
+  <!-- File 1: High Risk -->
+  <g font-family="monospace" font-size="11" transform="translate(645, 230)">
+    <text x="0" y="0" fill="#F0F6FC">src/handlers/stripeWebhook.ts</text>
+    <rect x="275" y="-12" width="75" height="18" rx="4" fill="#EF4444" opacity="0.2"/>
+    <text x="280" y="1" fill="#F87171" font-weight="bold">0.45 (-45%)</text>
+    <text x="405" y="1" fill="#F87171">High Risk</text>
+  </g>
+
+  <!-- File 2: Medium Risk -->
+  <g font-family="monospace" font-size="11" transform="translate(645, 275)">
+    <text x="0" y="0" fill="#F0F6FC">src/services/billingCalculator.ts</text>
+    <rect x="275" y="-12" width="75" height="18" rx="4" fill="#F59E0B" opacity="0.2"/>
+    <text x="280" y="1" fill="#FBBF24" font-weight="bold">0.18 (-18%)</text>
+    <text x="405" y="1" fill="#FBBF24">Medium Risk</text>
+  </g>
+
+  <!-- File 3: Low Risk -->
+  <g font-family="monospace" font-size="11" transform="translate(645, 320)">
+    <text x="0" y="0" fill="#F0F6FC">src/middleware/auth.ts</text>
+    <rect x="275" y="-12" width="75" height="18" rx="4" fill="#10B981" opacity="0.2"/>
+    <text x="280" y="1" fill="#34D399" font-weight="bold">0.04 (-4%)</text>
+    <text x="405" y="1" fill="#34D399">Low Risk</text>
+  </g>
+
+  <!-- File 4: Clean -->
+  <g font-family="monospace" font-size="11" transform="translate(645, 365)">
+    <text x="0" y="0" fill="#F0F6FC">src/utils/logger.ts</text>
+    <rect x="275" y="-12" width="75" height="18" rx="4" fill="#10B981" opacity="0.2"/>
+    <text x="280" y="1" fill="#34D399" font-weight="bold">0.01 (-1%)</text>
+    <text x="405" y="1" fill="#34D399">Stable</text>
+  </g>
+
+  <!-- Explanatory Box -->
+  <rect x="645" y="420" width="490" height="185" rx="10" fill="#161B22" stroke="#30363D"/>
+  <text x="660" y="445" fill="#34D399" font-family="sans-serif" font-size="11" font-weight="bold">🛡️ Autonomous Feedback &amp; Rejection Loop</text>
+  <text x="660" y="470" fill="#8B949E" font-family="sans-serif" font-size="10">When an on-call developer rejects a proposed patch with custom feedback:</text>
+  <text x="670" y="490" fill="#C9D1D9" font-family="sans-serif" font-size="10">1. CodeMedic automatically applies a penalty score to that file path.</text>
+  <text x="670" y="510" fill="#C9D1D9" font-family="sans-serif" font-size="10">2. Future incidents in that file will demand higher verification standards.</text>
+  <text x="670" y="530" fill="#C9D1D9" font-family="sans-serif" font-size="10">3. Prevents recurring regressions without manual rule authoring.</text>
+  <text x="660" y="565" fill="#60A5FA" font-family="monospace" font-size="10">Confidence = (Tests * 0.60) + (AI * 0.35) - Penalty</text>
+</svg>

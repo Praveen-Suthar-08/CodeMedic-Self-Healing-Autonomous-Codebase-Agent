@@ -1,0 +1,6 @@
+{
+  "name": "CodeMedic — Self-Healing Codebase Agent",
+  "description": "Autonomous AI agent that detects bugs from error logs, diagnoses root causes with Gemini, generates verified diff fixes in an isolated sandbox, and opens GitHub PRs with a transparent reasoning trail.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

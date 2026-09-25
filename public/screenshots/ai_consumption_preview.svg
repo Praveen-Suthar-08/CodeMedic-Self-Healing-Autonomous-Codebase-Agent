@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D13"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="modalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="burnGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg4)"/>
+  
+  <!-- Backdrop Blur Layer Simulation -->
+  <rect x="0" y="0" width="1200" height="675" fill="#000000" opacity="0.6"/>
+
+  <!-- Modal Window -->
+  <rect x="80" y="35" width="1040" height="605" rx="20" fill="url(#modalGrad)" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- Modal Header -->
+  <rect x="80" y="35" width="1040" height="65" rx="20" fill="#0D1117"/>
+  <circle cx="120" cy="67" r="14" fill="#7C3AED" opacity="0.2"/>
+  <text x="145" y="65" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">AI Token Consumption &amp; FinOps Operational Budget Ledger</text>
+  <rect x="730" y="55" width="130" height="22" rx="6" fill="#7C3AED" opacity="0.2"/>
+  <text x="740" y="70" fill="#C084FC" font-family="monospace" font-size="10" font-weight="bold">GEMINI 3.8 FLASH</text>
+  <text x="1080" y="70" fill="#8B949E" font-family="sans-serif" font-size="18">✕</text>
+
+  <!-- Top KPI 4-Card Row inside Modal -->
+  <rect x="105" y="115" width="230" height="85" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <text x="120" y="135" fill="#8B949E" font-family="sans-serif" font-size="10">MONTH TOTAL SPEND</text>
+  <text x="120" y="165" fill="#F0F6FC" font-family="monospace" font-size="20" font-weight="bold">$0.0824</text>
+  <text x="120" y="185" fill="#34D399" font-family="monospace" font-size="10">/ $50.00 budget (0.16% used)</text>
+
+  <rect x="355" y="115" width="230" height="85" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <text x="370" y="135" fill="#8B949E" font-family="sans-serif" font-size="10">TOTAL TOKENS PROCESSED</text>
+  <text x="370" y="165" fill="#FBBF24" font-family="monospace" font-size="20" font-weight="bold">348.5k</text>
+  <text x="370" y="185" fill="#8B949E" font-family="monospace" font-size="10">Prompt: 280k | Output: 68k</text>
+
+  <rect x="605" y="115" width="230" height="85" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <text x="620" y="135" fill="#8B949E" font-family="sans-serif" font-size="10">UNIT COST PER SURGERY</text>
+  <text x="620" y="165" fill="#34D399" font-family="monospace" font-size="20" font-weight="bold">$0.00084</text>
+  <text x="620" y="185" fill="#8B949E" font-family="sans-serif" font-size="10">Avg 2,450 tokens / autonomous run</text>
+
+  <rect x="855" y="115" width="240" height="85" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <text x="870" y="135" fill="#8B949E" font-family="sans-serif" font-size="10">PROMPT CACHE HIT RATIO</text>
+  <text x="870" y="165" fill="#60A5FA" font-family="monospace" font-size="20" font-weight="bold">84.6%</text>
+  <text x="870" y="185" fill="#34D399" font-family="monospace" font-size="10">50% discount on AST context</text>
+
+  <!-- Modal Tabs -->
+  <rect x="105" y="215" width="990" height="40" rx="10" fill="#0D1117" stroke="#21262D"/>
+  <rect x="110" y="220" width="160" height="30" rx="8" fill="#21262D"/>
+  <text x="125" y="240" fill="#F0F6FC" font-family="sans-serif" font-size="11" font-weight="bold">📦 By Repository (3)</text>
+  
+  <text x="300" y="240" fill="#8B949E" font-family="sans-serif" font-size="11">🚨 By Incident (4)</text>
+  <text x="440" y="240" fill="#8B949E" font-family="sans-serif" font-size="11">📈 14-Day Spend &amp; Burn Rate</text>
+
+  <rect x="940" y="220" width="145" height="30" rx="8" fill="#161B22" stroke="#30363D"/>
+  <text x="955" y="240" fill="#C084FC" font-family="sans-serif" font-size="10" font-weight="bold">📥 Export Ledger CSV</text>
+
+  <!-- Per-Repository Consumption Table -->
+  <rect x="105" y="270" width="990" height="240" rx="12" fill="#0D1117" stroke="#21262D"/>
+  <rect x="105" y="270" width="990" height="32" rx="12" fill="#161B22"/>
+  <text x="125" y="291" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">REPOSITORY</text>
+  <text x="300" y="291" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">SURGERIES</text>
+  <text x="420" y="291" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">PROMPT TOKENS</text>
+  <text x="560" y="291" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">OUTPUT TOKENS</text>
+  <text x="700" y="291" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">TOTAL TOKENS</text>
+  <text x="830" y="291" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">AVG TOKENS</text>
+  <text x="980" y="291" fill="#8B949E" font-family="monospace" font-size="10" font-weight="bold">EST. COST</text>
+
+  <!-- Repo 1 -->
+  <g font-family="monospace" font-size="11" transform="translate(125, 325)">
+    <text x="0" y="0" fill="#F0F6FC" font-weight="bold">repo-payments</text>
+    <text x="180" y="0" fill="#8B949E">42 runs</text>
+    <text x="300" y="0" fill="#8B949E">108,450</text>
+    <text x="440" y="0" fill="#8B949E">28,200</text>
+    <text x="580" y="0" fill="#FBBF24" font-weight="bold">136,650</text>
+    <text x="710" y="0" fill="#8B949E">~3,250</text>
+    <text x="860" y="0" fill="#C084FC" font-weight="bold">$0.03212</text>
+  </g>
+
+  <!-- Repo 2 -->
+  <g font-family="monospace" font-size="11" transform="translate(125, 365)">
+    <text x="0" y="0" fill="#F0F6FC" font-weight="bold">repo-auth</text>
+    <text x="180" y="0" fill="#8B949E">35 runs</text>
+    <text x="300" y="0" fill="#8B949E">82,100</text>
+    <text x="440" y="0" fill="#8B949E">20,400</text>
+    <text x="580" y="0" fill="#FBBF24" font-weight="bold">102,500</text>
+    <text x="710" y="0" fill="#8B949E">~2,920</text>
+    <text x="860" y="0" fill="#C084FC" font-weight="bold">$0.02425</text>
+  </g>
+
+  <!-- Repo 3 -->
+  <g font-family="monospace" font-size="11" transform="translate(125, 405)">
+    <text x="0" y="0" fill="#F0F6FC" font-weight="bold">repo-cart</text>
+    <text x="180" y="0" fill="#8B949E">28 runs</text>
+    <text x="300" y="0" fill="#8B949E">64,200</text>
+    <text x="440" y="0" fill="#8B949E">16,100</text>
+    <text x="580" y="0" fill="#FBBF24" font-weight="bold">80,300</text>
+    <text x="710" y="0" fill="#8B949E">~2,860</text>
+    <text x="860" y="0" fill="#C084FC" font-weight="bold">$0.01886</text>
+  </g>
+
+  <!-- Total Summary Row -->
+  <rect x="105" y="470" width="990" height="40" rx="8" fill="#161B22"/>
+  <text x="125" y="495" fill="#F0F6FC" font-family="monospace" font-size="11" font-weight="bold">Total Fleet Consumption</text>
+  <text x="305" y="495" fill="#8B949E" font-family="monospace" font-size="11">105 runs</text>
+  <text x="705" y="495" fill="#FBBF24" font-family="monospace" font-size="11" font-weight="bold">319,450 tokens</text>
+  <text x="985" y="495" fill="#34D399" font-family="monospace" font-size="12" font-weight="bold">$0.07523</text>
+
+  <!-- Bottom Pricing Callout -->
+  <rect x="105" y="525" width="990" height="50" rx="10" fill="#0D1117" stroke="#21262D"/>
+  <text x="125" y="555" fill="#8B949E" font-family="sans-serif" font-size="11">Google Gemini 3.8 Flash Pricing: <tspan fill="#F0F6FC" font-family="monospace">$0.10/1M prompt</tspan> · <tspan fill="#F0F6FC" font-family="monospace">$0.40/1M output</tspan> · Context Cache: <tspan fill="#34D399" font-family="monospace">50% discount</tspan></text>
+  <rect x="920" y="537" width="160" height="26" rx="6" fill="#059669" opacity="0.2"/>
+  <text x="930" y="554" fill="#34D399" font-family="monospace" font-size="10" font-weight="bold">99.98% ROI vs Dev Time</text>
+</svg>

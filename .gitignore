@@ -1,0 +1,150 @@
+# ==============================================================================
+# 📦 Node.js & Dependency Directories
+# ==============================================================================
+node_modules/
+jspm_packages/
+.npm/
+.esm-cache/
+.pnp/
+.pnp.js
+.pnp.cjs
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnpm-store/
+
+# ==============================================================================
+# 🔒 Sensitive Local Environment Variables & Secrets
+# ==============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+!.env.example
+
+# Private Keys & Certificates
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.keystore
+*.jks
+secrets/
+.secrets/
+
+# ==============================================================================
+# 🐳 Docker Sandbox Artifacts & Isolated Execution Containers
+# ==============================================================================
+# Dynamic container sandbox mounts and temp workspaces
+sandbox-artifacts/
+sandbox-temp/
+sandbox-workspaces/
+sandbox-containers/
+docker-sandbox-*/
+container-logs/
+docker-volumes/
+.docker/
+
+# Docker build cache & temporary images
+*.dockerfile.tmp
+*.dockerfile.bak
+docker-compose.override.yml
+docker-compose.*.local.yml
+*.tar
+*.tar.gz
+*.sock
+
+# ==============================================================================
+# 🍎 🪟 OS-Specific Files & Artifacts
+# ==============================================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.nfs*
+
+# ==============================================================================
+# 🛠️ Editor & IDE Configurations
+# ==============================================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.swn
+.project
+.classpath
+.settings/
+
+# ==============================================================================
+# 🏗️ Build, Test & Runtime Outputs
+# ==============================================================================
+dist/
+build/
+out/
+bin/
+obj/
+coverage/
+.nyc_output/
+*.lcov
+reports/
+junit.xml
+test-results/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Caches & Temporary Files
+.cache/
+.parcel-cache/
+.next/
+.astro/
+.turbo/
+.vite/
+.eslintcache
+*.tsbuildinfo
+.temp/
+.tmp/
