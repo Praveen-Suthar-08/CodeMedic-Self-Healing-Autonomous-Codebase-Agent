@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
   <defs>
-    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="or_bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#090D13"/>
       <stop offset="100%" stop-color="#0D1117"/>
     </linearGradient>
-    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="or_card" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#161B22"/>
       <stop offset="100%" stop-color="#12161C"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="675" fill="url(#bg2)"/>
+  <rect width="1200" height="675" fill="url(#or_bg)"/>
 
   <!-- Top Navigation & Pipeline Stepper -->
   <rect x="30" y="25" width="1140" height="75" rx="14" fill="#161B22" stroke="#30363D" stroke-width="1"/>
@@ -22,7 +22,7 @@
 
   <!-- Title & Repo -->
   <text x="135" y="55" fill="#F87171" font-family="monospace" font-size="10" font-weight="bold">CRITICAL &#183; REPO-PAYMENTS &#183; SRC/HANDLERS/STRIPEWEBHOOK.TS</text>
-  <text x="135" y="78" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">TypeError: Cannot read properties of undefined (reading 'amount_received')</text>
+  <text x="135" y="78" fill="#F0F6FC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="bold">TypeError: Cannot read properties of undefined (reading &apos;amount_received&apos;)</text>
 
   <!-- 6-Stage Autonomous Pipeline Stepper -->
   <g transform="translate(680, 45)">
@@ -65,8 +65,8 @@
   <rect x="1000" y="42" width="155" height="38" rx="10" fill="#059669"/>
   <text x="1025" y="66" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">Approve PR [A]</text>
 
-  <!-- Left Column: Gemini Reasoning Trail &amp; Confidence Ring -->
-  <rect x="30" y="115" width="410" height="475" rx="16" fill="url(#cardGrad2)" stroke="#30363D" stroke-width="1"/>
+  <!-- Left Column: Gemini Reasoning Trail & Confidence Ring -->
+  <rect x="30" y="115" width="410" height="475" rx="16" fill="url(#or_card)" stroke="#30363D" stroke-width="1"/>
   
   <text x="50" y="145" fill="#F0F6FC" font-family="sans-serif" font-size="13" font-weight="bold">&#129504; Gemini AST Diagnostic Trail</text>
   <text x="50" y="165" fill="#8B949E" font-family="sans-serif" font-size="11">Autonomous step-by-step reasoning evidence</text>
@@ -102,7 +102,7 @@
   <text x="70" y="551" fill="#34D399" font-family="monospace" font-size="10">Status: Exceeds 88% Auto-Merge Threshold</text>
 
   <!-- Right Column: Split-Pane Unified Diff Viewer &amp; Docker Sandbox Runner -->
-  <rect x="460" y="115" width="710" height="310" rx="16" fill="url(#cardGrad2)" stroke="#30363D" stroke-width="1"/>
+  <rect x="460" y="115" width="710" height="310" rx="16" fill="url(#or_card)" stroke="#30363D" stroke-width="1"/>
   
   <rect x="460" y="115" width="710" height="40" rx="14" fill="#0D1117" stroke="#30363D"/>
   <text x="480" y="140" fill="#F0F6FC" font-family="monospace" font-size="12" font-weight="bold">&#128196; src/handlers/stripeWebhook.ts (-3 / +8)</text>
@@ -123,11 +123,11 @@
     <rect x="0" y="90" width="690" height="20" fill="#10B981" opacity="0.15"/>
     <text x="10" y="104" fill="#34D399">+   const amount = paymentIntent?.amount_received ?? paymentIntent?.amount ?? 0;</text>
     <rect x="0" y="110" width="690" height="20" fill="#10B981" opacity="0.15"/>
-    <text x="10" y="124" fill="#34D399">+   if (!amount) throw new InvalidPayloadError('Missing valid amount');</text>
+    <text x="10" y="124" fill="#34D399">+   if (!amount) throw new InvalidPayloadError(&apos;Missing valid amount&apos;);</text>
     <rect x="0" y="130" width="690" height="20" fill="#10B981" opacity="0.15"/>
     <text x="10" y="144" fill="#34D399">+   await updateLedger(event.data.object.id, amount);</text>
 
-    <text x="10" y="168" fill="#8B949E">    return { status: 'processed', intentId: event.data.object.id };</text>
+    <text x="10" y="168" fill="#8B949E">    return { status: &apos;processed&apos;, intentId: event.data.object.id };</text>
   </g>
 
   <!-- Bottom Right: Isolated Docker Sandbox Test Output -->
