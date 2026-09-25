@@ -41,27 +41,27 @@
 <div align="center">
 
 ### 1. Autonomous Triage Dashboard & Recharts Priority Donut
-![Dashboard Triage UI](public/screenshots/dashboard_triage_preview.svg)
+![Dashboard Triage UI](./public/screenshots/dashboard_triage_preview.svg)
 
 <br/>
 
 ### 2. The Operating Room — AI Diff Surgery, AST Reasoning & Docker Sandbox
-![Operating Room UI](public/screenshots/operating_room_preview.svg)
+![Operating Room UI](./public/screenshots/operating_room_preview.svg)
 
 <br/>
 
 ### 3. Engineering Leadership & SOC-2 Immutable Audit Ledger
-![Admin Analytics UI](public/screenshots/admin_analytics_preview.svg)
+![Admin Analytics UI](./public/screenshots/admin_analytics_preview.svg)
 
 <br/>
 
 ### 4. AI Consumption, Unit Economics & 14-Day Spend Ledger
-![AI Consumption Modal UI](public/screenshots/ai_consumption_preview.svg)
+![AI Consumption Modal UI](./public/screenshots/ai_consumption_preview.svg)
 
 <br/>
 
 ### 5. Repository Policies, Webhook Ingestion Tokens & Risk Heatmap
-![Repo Settings UI](public/screenshots/repo_settings_preview.svg)
+![Repo Settings UI](./public/screenshots/repo_settings_preview.svg)
 
 </div>
 
@@ -159,7 +159,7 @@ When microservices fail at 2 AM, on-call engineers spend precious minutes waking
 
 ### 1. Real-Time Autonomous Triage Dashboard
 
-![Dashboard Triage UI](public/screenshots/dashboard_triage_preview.svg)
+![Dashboard Triage UI](./public/screenshots/dashboard_triage_preview.svg)
 
 The unified mission control for software reliability teams, featuring responsive `max-w-[1920px]` layout hierarchy:
 - **Executive Telemetry KPI Bar**: Real-time counters for active incidents, autonomous resolution rate ($94.2\%$), active webhook sinks, and sandbox container isolation.
@@ -177,7 +177,7 @@ The unified mission control for software reliability teams, featuring responsive
 
 ### 3. The Operating Room (Incident Detail Surgery)
 
-![Operating Room UI](public/screenshots/operating_room_preview.svg)
+![Operating Room UI](./public/screenshots/operating_room_preview.svg)
 
 Deep surgical workspace for code inspections with illuminated keyboard shortcuts:
 - **Side-by-Side Diff Viewer**: Syntax-highlighted additions and deletions with inline line numbers.
@@ -189,7 +189,7 @@ Deep surgical workspace for code inspections with illuminated keyboard shortcuts
 
 ### 4. AI Consumption & Gemini Cost Ledger
 
-![AI Consumption Modal UI](public/screenshots/ai_consumption_preview.svg)
+![AI Consumption Modal UI](./public/screenshots/ai_consumption_preview.svg)
 
 Granular AI FinOps modal in Admin Analytics:
 - **Budget Tracking**: Active spend against monthly allocation (`$0.0824 / $50.00 · 0.16% used`).
@@ -201,7 +201,7 @@ Granular AI FinOps modal in Admin Analytics:
 
 ### 5. Repository Settings & Gatekeeper Policies
 
-![Repo Settings UI](public/screenshots/repo_settings_preview.svg)
+![Repo Settings UI](./public/screenshots/repo_settings_preview.svg)
 
 Fine-grained enterprise governance and continuous integration controls:
 - **Auto-Merge Confidence Threshold Gate**: Configurable slider (`88%` recommended) for autonomous GitHub PR merging.
@@ -247,7 +247,7 @@ Simulates an on-call engineer's mobile experience at 2 AM:
 
 ### 7. SOC-2 Compliance Audit & Analytics
 
-![Admin Analytics UI](public/screenshots/admin_analytics_preview.svg)
+![Admin Analytics UI](./public/screenshots/admin_analytics_preview.svg)
 
 Full transparency and regulatory audit readiness:
 - **Interactive ROI & Time Savings Calculator**: Adjust team size and hourly developer rates to calculate net dollar savings.
